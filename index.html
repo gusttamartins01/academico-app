@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - AcadêmicoApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDsZg1qfF+4L2zNqP+5R4d1W6w/H5jA7o+1qF5n9xN65g96uQ/W/W5q3Qx7L5zNqP+5R4d1W6w/H5jA7o+1qF5n9xN65g96uQ/W/W5q3Qx7L5W5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <i class="fas fa-graduation-cap logo-icon"></i> 
+        <h1>Bem-vindo(a)</h1>
+        <p>Acesse sua conta para continuar</p>
+        <form id="login-form">
+            <div class="input-group">
+                <i class="fas fa-user icon"></i>
+                <input type="text" id="nome" placeholder="Nome Completo" required />
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" id="email" placeholder="Email Acadêmico" required />
+            </div>
+            <button type="submit">
+                <i class="fas fa-sign-in-alt"></i> Entrar
+            </button>
+        </form>
+        <p class="signup-link"><a href="#">Ainda não tem uma conta? **Criar Conta**</a></p>
+    </div>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+/* Cores Customizadas */
+:root {
+    --primary-color: #0057b8; /* Azul Escuro */
+    --secondary-color: #00aaff; /* Azul Claro */
+    --background-color: #f0f2f5;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --success-color: #28a745; /* Concluída - Verde */
+    --warning-color: #ffc107; /* Pendente - Amarelo */
+    --danger-color: #dc3545; /* Atrasada - Vermelho */
+    --total-color: #17a2b8; /* Total - Ciano */
+}
+
+/* Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ------------------
+    LOGIN PAGE STYLES
+   ------------------ */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.login-container {
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    width: 90%;
+    max-width: 360px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.login-container h1 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.login-container p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Input Group com Ícone */
+.input-group {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3.5rem; /* Aumenta o padding para o ícone */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 87, 184, 0.2);
+}
+
+.input-group .icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 1.2rem;
+}
+
+button {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 87, 184, 0.4);
+}
+
+button:hover {
+    background: #003f8a;
+    box-shadow: 0 6px 15px rgba(0, 87, 184, 0.5);
+    transform: translateY(-2px);
+}
+
+button i {
+    margin-right: 0.5rem;
+}
+
+.signup-link {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.signup-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------
+    DASHBOARD PAGE STYLES
+   ---------------------- */
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+header h1 i {
+    margin-right: 0.5rem;
+}
+
+#user-greeting {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section h2 i {
+    margin-right: 0.5rem;
+}
+
+/* Stats Cards (Resumo) */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.stats-card {
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.stats-card .icon-lg {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    opacity: 0.8;
+}
+
+/* Cores específicas para os Cards */
+.total-card { background-color: var(--total-color); }
+.pendente-card { background-color: var(--warning-color); }
+.concluida-card { background-color: var(--success-color); }
+.atrasada-card { background-color: var(--danger-color); }
+
+/* Task List */
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.task-card {
+    background: #fefefe;
+    padding: 1.5rem;
+    border-left: 6px solid #ccc; /* Cor neutra por padrão */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+
+.task-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.task-card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.task-card p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+}
+
+.task-card strong {
+    font-weight: 600;
+    color: #555;
+}
+
+/* Estilos de Borda por Status definidos no JS */
+.task-card.status-pendente { border-left-color: var(--warning-color); }
+.task-card.status-concluida { border-left-color: var(--success-color); }
+.task-card.status-atrasada { border-left-color: var(--danger-color); }
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #user-greeting {
+        margin-top: 0.5rem;
+    }
+    .stats-grid, .task-grid {
+        grid-template-columns: 1fr;
+    }
+}
