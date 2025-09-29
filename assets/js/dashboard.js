@@ -75,41 +75,46 @@ document.addEventListener("DOMContentLoaded", () => {
                 taskList.appendChild(div);
             });
 
-            // ---------- Botão do WhatsApp ----------
+            // ---------- Botão do WhatsApp para visualizar as próprias tarefas ----------
             const whatsappBtn = document.getElementById("whatsapp-button");
-            const numeroWhatsApp = "558585750405"; // Número real do professor (formato internacional sem espaços)
 
             if (whatsappBtn) {
                 whatsappBtn.addEventListener("click", (e) => {
                     e.preventDefault();
 
-                    let mensagem = `Olá, professor! 👋\n\nAqui é ${usuario?.nome || "o aluno"}.\n\n`;
-
-                    if (pendentes.length === 0 && atrasadas.length === 0) {
-                        mensagem += "✅ No momento, não tenho atividades pendentes ou atrasadas.";
-                    } else {
-                        mensagem += "Gostaria de informar que tenho as seguintes atividades pendentes e atrasadas:\n\n";
-                    }
+                    let mensagem = `📋 Olá, ${usuario?.nome || "Estudante"}! Aqui está o resumo das suas tarefas:\n\n`;
 
                     if (pendentes.length > 0) {
-                        mensagem += "📝 *Pendentes:*\n";
+                        mensagem += "📝 Pendentes:\n";
                         pendentes.forEach((t, i) => {
                             mensagem += `${i + 1}. ${t.titulo} - ${t.disciplina} (Prazo: ${t.prazo})\n`;
                         });
                         mensagem += "\n";
                     }
 
+                    if (concluidas.length > 0) {
+                        mensagem += "✅ Concluídas:\n";
+                        concluidas.forEach((t, i) => {
+                            mensagem += `${i + 1}. ${t.titulo} - ${t.disciplina} (Concluída)\n`;
+                        });
+                        mensagem += "\n";
+                    }
+
                     if (atrasadas.length > 0) {
-                        mensagem += "⏰ *Atrasadas:*\n";
+                        mensagem += "⏰ Atrasadas:\n";
                         atrasadas.forEach((t, i) => {
                             mensagem += `${i + 1}. ${t.titulo} - ${t.disciplina} (Venceu em: ${t.prazo})\n`;
                         });
                         mensagem += "\n";
                     }
 
-                    mensagem += "Poderia me orientar sobre essas atividades? Obrigado! 🙏";
+                    // Mensagem final incentivando entrega rápida
+                    if (pendentes.length > 0 || atrasadas.length > 0) {
+                        mensagem += "⚠️ Atenção! É altamente recomendado que você entregue suas atividades pendentes e atrasadas o quanto antes para não comprometer seu desempenho!\n";
+                    }
 
-                    const link = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+                    // Abre o WhatsApp Web com a mensagem pronta para o próprio usuário
+                    const link = `https://wa.me/?text=${encodeURIComponent(mensagem)}`;
                     window.open(link, "_blank");
                 });
             }
