@@ -8,52 +8,12 @@
     "prazo": "em 7 dias"
   },
   {
-    "titulo": "Modelagem UML - Sistema de Biblioteca",
-    "disciplina": "Análise de Sistemas",
-    "descricao": "Criar diagramas de Caso de Uso e de Classes para o novo sistema da biblioteca.",
-    "professor": "Prof. Saulo Silva",
-    "status": "pendente",
-    "prazo": "em 4 dias"
-  },
-  {
     "titulo": "Revisão - Estrutura de Repetição",
     "disciplina": "Algoritmos e Estrutura de Dados",
     "descricao": "Resolver os 10 exercícios da lista sobre laços (for, while).",
     "professor": "Prof. João Pedro",
     "status": "atrasada",
     "prazo": "há 2 dias"
-  },
-  {
-    "titulo": "Resumo - Fundamentos de Redes",
-    "disciplina": "Redes de Computadores",
-    "descricao": "Preparar um resumo sobre o modelo OSI e TCP/IP.",
-    "professor": "Prof. Lúcia Mendes",
-    "status": "concluida",
-    "prazo": "entregue"
-  },
-  {
-    "titulo": "Relatório - Testes de Unidade (Junit)",
-    "disciplina": "Qualidade de Software",
-    "descricao": "Documentar a cobertura de testes para o módulo de inventário.",
-    "professor": "Prof. Carlos Lima",
-    "status": "pendente",
-    "prazo": "em 10 dias"
-  },
-  {
-    "titulo": "Apresentação - História da Computação",
-    "disciplina": "Introdução à TI",
-    "descricao": "Apresentar sobre a 'Era do Mainframe'.",
-    "professor": "Prof. Helena Costa",
-    "status": "pendente",
-    "prazo": "em 3 dias"
-  },
-  {
-    "titulo": "Configuração - Servidor Web Apache",
-    "disciplina": "Sistemas Operacionais",
-    "descricao": "Instalar e configurar o Apache em uma VM Linux, incluindo permissões.",
-    "professor": "Prof. Rodrigo Alves",
-    "status": "pendente",
-    "prazo": "em 6 dias"
   },
   {
     "titulo": "Criação - Triggers e Stored Procedures",
@@ -64,12 +24,12 @@
     "prazo": "em 8 dias"
   },
   {
-    "titulo": "Simulação - Ataque XSS",
-    "disciplina": "Segurança da Informação",
-    "descricao": "Simular e documentar um ataque Cross-Site Scripting em um ambiente controlado.",
-    "professor": "Prof. Rafael Silva",
+    "titulo": "Apresentação - História da Computação",
+    "disciplina": "Introdução à TI",
+    "descricao": "Apresentar sobre a 'Era do Mainframe'.",
+    "professor": "Prof. Helena Costa",
     "status": "pendente",
-    "prazo": "em 12 dias"
+    "prazo": "em 3 dias"
   },
   {
     "titulo": "Revisão de Código - Padrões de Projeto",
@@ -80,19 +40,11 @@
     "prazo": "entregue"
   },
   {
-    "titulo": "Lista de Exercícios - Álgebra Booleana",
-    "disciplina": "Matemática Discreta",
-    "descricao": "Simplificação de expressões booleanas e tabelas-verdade.",
-    "professor": "Prof. Lúcia Mendes",
+    "titulo": "Modelagem UML - Sistema de Biblioteca",
+    "disciplina": "Análise de Sistemas",
+    "descricao": "Criar diagramas de Caso de Uso e de Classes para o novo sistema da biblioteca.",
+    "professor": "Prof. Saulo Silva",
     "status": "pendente",
-    "prazo": "em 5 dias"
-  },
-  {
-    "titulo": "Estudo de Caso - Metodologia Ágil",
-    "disciplina": "Gerenciamento de Projetos",
-    "descricao": "Preparar estudo de caso sobre a aplicação do Scrum em uma startup.",
-    "professor": "Prof. Carlos Lima",
-    "status": "pendente",
-    "prazo": "em 9 dias"
+    "prazo": "em 4 dias"
   }
 ]
