@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - AcadêmicoApp</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDsZg1qfF+4L2zNqP+5R4d1W6w/H5jA7o+1qF5n9xN65g96uQ/W/W5q3Qx7L5W5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - AcadêmicoApp</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1><i class="fas fa-book-reader"></i> APP ACADÊMICO</h1>
-            <p id="user-greeting"></p>
+  <header>
+    <div class="header-content">
+      <h1><i class="fas fa-book-reader"></i> APP ACADÊMICO</h1>
+      <p id="user-greeting"></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="summary">
+      <h2><i class="fas fa-chart-bar"></i> Resumo de Atividades</h2>
+      <div class="stats-grid">
+        <div class="stats-card total-card">
+          <i class="fas fa-list-ul icon-lg"></i>
+          <p class="stat-number" id="total">0</p>
+          <p class="stat-label">Total de Tarefas</p>
         </div>
-    </header>
+        <div class="stats-card pendente-card">
+          <i class="fas fa-hourglass-half icon-lg"></i>
+          <p class="stat-number" id="pendentes">0</p>
+          <p class="stat-label">Pendentes</p>
+        </div>
+        <div class="stats-card concluida-card">
+          <i class="fas fa-check-circle icon-lg"></i>
+          <p class="stat-number" id="concluidas">0</p>
+          <p class="stat-label">Concluídas</p>
+        </div>
+        <div class="stats-card atrasada-card">
+          <i class="fas fa-exclamation-triangle icon-lg"></i>
+          <p class="stat-number" id="atrasadas">0</p>
+          <p class="stat-label">Atrasadas</p>
+        </div>
+      </div>
+    </section>
 
-    <main class="container">
-        <section class="summary">
-            <h2><i class="fas fa-chart-bar"></i> Resumo de Atividades</h2>
-            <div class="stats-grid">
-                <div class="stats-card total-card">
-                    <i class="fas fa-list-ul icon-lg"></i>
-                    <p class="stat-number" id="total">0</p>
-                    <p class="stat-label">Total de Tarefas</p>
-                </div>
-                <div class="stats-card pendente-card">
-                    <i class="fas fa-hourglass-half icon-lg"></i>
-                    <p class="stat-number" id="pendentes">0</p>
-                    <p class="stat-label">Pendentes</p>
-                </div>
-                <div class="stats-card concluida-card">
-                    <i class="fas fa-check-circle icon-lg"></i>
-                    <p class="stat-number" id="concluidas">0</p>
-                    <p class="stat-label">Concluídas</p>
-                </div>
-                <div class="stats-card atrasada-card">
-                    <i class="fas fa-exclamation-triangle icon-lg"></i>
-                    <p class="stat-number" id="atrasadas">0</p>
-                    <p class="stat-label">Atrasadas</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="tasks">
-            <h2><i class="fas fa-tasks"></i> Minhas Tarefas</h2>
-            <div id="task-list" class="task-grid"></div>
-        </section>
-    </main>
+    <section class="tasks">
+      <h2><i class="fas fa-tasks"></i> Minhas Tarefas</h2>
+      <div id="task-list" class="task-grid"></div>
+    </section>
+  </main>
     <section class="footer">
-    <a href="#" id="whatsapp-button" target="_blank" class="whatsapp-btn">
-        <i class="fab fa-whatsapp"></i> Enviar relatório completo
+    <a href="#" id="whatsapp-button" class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i> Enviar relatório completo
     </a>
     <p>&copy; <b>2025 Acadêmico App<br> Desenvolvido por Gustavo Martins.</b></p>
     </section>
